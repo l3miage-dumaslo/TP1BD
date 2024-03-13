@@ -5,12 +5,12 @@ import fr.uga.l3miage.tp1.exo1.models.enums.PowerType;
 import fr.uga.l3miage.tp1.exo1.models.enums.ShifterType;
 import fr.uga.l3miage.tp1.exo1.models.enums.WeightUnity;
 
-import javax.persistence.Column;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDate;
 
+
+@Entity
+@Table(name="bike_ducaty")
 public class BikeEntity {
     @Id
     @Column(name = "immat",length = 8)
@@ -25,7 +25,7 @@ public class BikeEntity {
     @Column(name = "shifter")
     private Boolean shifter;
     @Column(name= "shifterType")
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.ORDINAL)
     private ShifterType shifterType;
 
     @Column(name="circulationDate")
