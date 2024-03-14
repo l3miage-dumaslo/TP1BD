@@ -1,10 +1,13 @@
 package fr.uga.l3miage.tp1.exo2.models;
 
+import lombok.Getter;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name="netflix_account")
 public class NetflixAccountEntity {
+
     @Id
     @Column(name="id")
     private long id;
@@ -17,5 +20,6 @@ public class NetflixAccountEntity {
 
     @OneToOne
     private NetflixUserEntity uuid_user;
+
 
 }
