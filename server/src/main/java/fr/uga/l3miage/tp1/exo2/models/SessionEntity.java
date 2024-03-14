@@ -25,6 +25,6 @@ public class SessionEntity {
     @Column(name = "lock")
     private boolean lock;
 
-    @OneToOne
+    @OneToOne(mappedBy = "UserId")
     private UserEntity user;
 }

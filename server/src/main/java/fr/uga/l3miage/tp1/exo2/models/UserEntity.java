@@ -18,6 +18,6 @@ public class UserEntity {
     @Column(name = "lestConnexion")
     private OffsetDateTime lastConnexion;
 
-    @OneToOne(mappedBy = "Session")
+    @OneToOne
     private SessionEntity session;
 }
