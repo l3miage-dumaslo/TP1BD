@@ -15,7 +15,8 @@ public class NetflixAccountEntity {
     @Column(name="nb_devices")
     private int nb_devices;
 
-    @Column(name="typeAccount")
+    @Enumerated(EnumType.STRING)
+    @Column(name="type_Account")
     private String typeAccount;
 
     @OneToOne
