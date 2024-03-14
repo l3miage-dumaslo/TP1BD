@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class NetflixAccountEntity {
     @Id
     @Column(name="id")
-    private int id;
+    private long id;
 
     @Column(name="nb_devices")
     private int nb_devices;
@@ -16,7 +16,6 @@ public class NetflixAccountEntity {
     private String typeAccount;
 
     @OneToOne
-    @Column(name="uuid_user")
     private NetflixUserEntity uuid_user;
 
 }
