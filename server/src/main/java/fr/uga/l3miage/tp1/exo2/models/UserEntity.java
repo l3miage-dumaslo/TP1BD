@@ -1,7 +1,5 @@
 package fr.uga.l3miage.tp1.exo2.models;
 
-import fr.uga.l3miage.tp1.exo2.models.enums.SessionEntity;
-
 import javax.persistence.*;
 import java.time.OffsetDateTime;
 
