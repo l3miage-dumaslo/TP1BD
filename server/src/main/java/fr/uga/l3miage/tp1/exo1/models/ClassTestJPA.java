@@ -1,5 +1,6 @@
 @Entity
 public class ClassTestJPA {
+
     @Id
     private String myIdTest;
 

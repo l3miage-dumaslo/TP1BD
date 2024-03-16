@@ -1,5 +1,6 @@
 @Entity
 public class ClassTestJPATwo {
+
     @Id
     private String myIdTest;
 
