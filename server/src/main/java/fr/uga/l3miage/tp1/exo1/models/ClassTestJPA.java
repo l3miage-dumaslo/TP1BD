@@ -1,11 +1,5 @@
 package fr.uga.l3miage.tp1.exo1.models;
 
-import fr.uga.l3miage.tp1.exo1.models.enums.PowerType;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import java.time.LocalDate;
-
 @Entity
 public class ClassTestJPA {
     @Id
@@ -17,4 +11,3 @@ public class ClassTestJPA {
 
     private PowerType powerType;
 }
-
